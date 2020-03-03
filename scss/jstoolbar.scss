@@ -1,0 +1,185 @@
+.jstBlock .hidden {
+	display: none;
+}
+
+.jstEditor {
+	padding-left: 0px;
+
+	textarea, iframe {
+		margin: 0;
+	}
+}
+
+.jstHandle {
+	height: 10px;
+	font-size: 0.1em;
+	cursor: s-resize;
+
+	/*background: transparent url(img/resizer.png) no-repeat 45% 50%;*/
+}
+
+#content .jstTabs.tabs {
+	margin-bottom: -1px;
+
+	ul {
+		border-bottom: 0;
+	}
+
+	li {
+		height: 42px;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+
+		a {
+			display: inline-block;
+			vertical-align: bottom;
+			line-height: 19px;
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
+
+.jstElements {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-left: 6px;
+	padding-bottom: 2px;
+	height: 26px;
+}
+
+.wiki-preview {
+	background-color: #ffffff;
+	border: 1px solid #bbbbbb;
+
+	p.empty-preview {
+		color: #999;
+		font-style: italic;
+		margin-top: 1em;
+		text-align: center;
+	}
+}
+
+.jstElements {
+	button {
+		margin-right: 2px;
+		width: 24px;
+		height: 24px;
+		padding: 4px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #ddd;
+		background-color: #f7f7f7;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		opacity: 0.7;
+
+		&:hover {
+			border-color: #bbb;
+			background-color: #e5e5e5;
+			opacity: 1;
+		}
+
+		span {
+			display: none;
+		}
+	}
+
+	span {
+		display: inline;
+	}
+}
+
+.jstSpacer {
+	width: 0px;
+	font-size: 1px;
+	margin-right: 6px;
+}
+
+.jstElements .help {
+	float: right;
+	margin-right: 0.5em;
+	padding-top: 8px;
+	font-size: 0.9em;
+
+	a {
+		padding: 2px 0 2px 20px;
+		background: url(../images/help.png) no-repeat 0 50%;
+	}
+}
+
+/* Buttons
+-------------------------------------------------------- */
+
+.jstb_strong {
+	background-image: url(../images/jstoolbar/bt_strong.png);
+}
+
+.jstb_em {
+	background-image: url(../images/jstoolbar/bt_em.png);
+}
+
+.jstb_ins {
+	background-image: url(../images/jstoolbar/bt_ins.png);
+}
+
+.jstb_del {
+	background-image: url(../images/jstoolbar/bt_del.png);
+}
+
+.jstb_code {
+	background-image: url(../images/jstoolbar/bt_code.png);
+}
+
+.jstb_h1 {
+	background-image: url(../images/jstoolbar/bt_h1.png);
+}
+
+.jstb_h2 {
+	background-image: url(../images/jstoolbar/bt_h2.png);
+}
+
+.jstb_h3 {
+	background-image: url(../images/jstoolbar/bt_h3.png);
+}
+
+.jstb_ul {
+	background-image: url(../images/jstoolbar/bt_ul.png);
+}
+
+.jstb_ol {
+	background-image: url(../images/jstoolbar/bt_ol.png);
+}
+
+.jstb_bq {
+	background-image: url(../images/jstoolbar/bt_bq.png);
+}
+
+.jstb_unbq {
+	background-image: url(../images/jstoolbar/bt_bq_remove.png);
+}
+
+.jstb_pre {
+	background-image: url(../images/jstoolbar/bt_pre.png);
+}
+
+.jstb_precode {
+	background-image: url(../images/jstoolbar/bt_precode.png);
+}
+
+.jstb_link {
+	background-image: url(../images/jstoolbar/bt_link.png);
+}
+
+.jstb_img {
+	background-image: url(../images/jstoolbar/bt_img.png);
+}
+
+.jstb_help {
+	background-image: url(../images/help.png);
+}

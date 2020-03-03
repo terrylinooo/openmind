@@ -1,0 +1,19 @@
+#search-results {
+    dd {
+        margin-bottom: 1em;
+        padding-left: 20px;
+        margin-left: 0px;
+        font-size: 0.9em;
+
+        span.description {
+            display: block;
+            color: #808080;
+            font-style: italic;
+        }
+    }
+
+    span.project:after {
+        content: " -";
+    }
+}
+

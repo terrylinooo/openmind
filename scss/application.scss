@@ -1,0 +1,47 @@
+/*
+	Theme Name: Openmind
+	Theme URI: https://github.com/terrylinooo/openmind
+	Description: Openmid is a theme for Redmine project management tool.
+	Version: 1.0.0
+	Author: Terry Lin
+	Author URI: https://terryl.in
+	License: MIT
+*/
+
+@import 'application/variables';
+@import 'application/functions';
+@import 'application/bootstrap';
+@import 'application/typography';
+
+/*
+ * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@import 'fontawesome/variables';
+@import 'fontawesome/mixins';
+@import 'fontawesome/core';
+@import 'fontawesome/larger';
+@import 'fontawesome/fixed-width';
+@import 'fontawesome/list';
+@import 'fontawesome/bordered-pulled';
+@import 'fontawesome/animated';
+@import 'fontawesome/rotated-flipped';
+@import 'fontawesome/stacked';
+@import 'fontawesome/icons';
+@import 'fontawesome/screen-reader';
+@import 'fontawesome/webfont';
+
+/*
+ * Main part.
+ */
+
+@import 'application/main';
+@import 'application/icon';
+@import 'application/table';
+@import 'application/progressbar';
+@import 'application/tab';
+@import 'application/wiki';
+@import 'application/activity';
+@import 'application/search-result';
+@import 'application/content-buttons';
+@import 'application/admin-menu';

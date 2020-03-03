@@ -1,0 +1,170 @@
+#context-menu {
+	position: absolute;
+	z-index: 40;
+	font-size: 0.9em;
+
+	ul, li, a {
+		display: block;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+
+	ul {
+		width: 150px;
+		border: 1px solid #ccc;
+		background: white;
+		list-style: none;
+		padding: 2px;
+		border-radius: 2px;
+	}
+
+	li {
+		position: relative;
+		padding: 1px;
+		z-index: 39;
+		border: 1px solid white;
+
+		&.folder {
+			ul {
+				position: absolute;
+				left: 168px;
+
+				/* IE6 */
+
+				top: -2px;
+				max-height: 300px;
+				overflow: hidden;
+				overflow-y: auto;
+			}
+
+			> ul {
+				left: 148px;
+			}
+		}
+	}
+
+	&.reverse-y li.folder > ul, li.folder.up > ul {
+		top: auto;
+		bottom: 0;
+	}
+
+	&.reverse-x li.folder {
+		ul {
+			left: auto;
+			right: 168px;
+
+			/* IE6 */
+		}
+
+		> ul {
+			right: 148px;
+		}
+	}
+
+	&.reverse-y li.folder.down > ul {
+		position: absolute;
+		top: -2px;
+		bottom: auto;
+		max-height: 300px;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
+	a {
+		text-decoration: none !important;
+		padding: 2px 0px 2px 20px;
+		width: 100%;
+
+		/* IE */
+	}
+
+	li > a {
+		width: auto;
+	}
+
+	a.disabled {
+		color: #aaa;
+
+		&:hover {
+			color: #aaa;
+		}
+	}
+
+	li {
+		a.submenu {
+			padding-right: 16px;
+			background: url("../images/arrow_right.png") right no-repeat;
+		}
+
+		&:hover {
+			border: 1px solid #628db6;
+			background-color: #eef5fd;
+			border-radius: 3px;
+		}
+	}
+
+	a:hover {
+		color: #2A5685;
+	}
+
+	li.folder:hover {
+		z-index: 40;
+	}
+
+	ul ul {
+		display: none;
+	}
+
+	li:hover {
+		ul {
+			ul {
+				display: none;
+			}
+
+			display: block;
+		}
+
+		li:hover ul {
+			display: block;
+		}
+	}
+
+	a.icon-checked {
+		background: url(../images/toggle_check.png) no-repeat 3px 40%;
+	}
+}
+
+/* others */
+
+/* selected element */
+
+.context-menu-selection {
+	background-color: #507AAA !important;
+	color: #f8f8f8 !important;
+
+	a {
+		color: #f8f8f8 !important;
+
+		&:hover {
+			color: #f8f8f8 !important;
+		}
+	}
+
+	&:hover {
+		background-color: #507AAA !important;
+		color: #f8f8f8  !important;
+	}
+}
+
+div#gantt_area .context-menu-selection {
+	background-color: rgba(80, 122, 170, 0.48) !important;
+
+	&:hover {
+		background-color: rgba(80, 122, 170, 0.48) !important;
+	}
+
+	a {
+		color: #169 !important;
+	}
+}

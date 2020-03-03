@@ -1,0 +1,73 @@
+#activity {
+
+	h3 {
+		border-bottom: 1px #dddddd dashed;
+		padding: 10px;
+		
+		&:before {
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			content: fa-content($fa-var-user-clock);
+			margin-right: 5px;
+			background-color: $header-background-color;
+			color: #ffffff;
+			font-size: 13px;
+			line-height: 25px;
+			text-align: center;
+			vertical-align: bottom;
+			width: 25px;
+			height: 25px;
+			display: inline-block;
+			overflow: hidden;
+			border-radius: 50%;
+		}
+    }
+
+    dl, #search-results {
+        margin-left: 2em;
+    }
+
+	dt {
+		&.me .time {
+			border-bottom: 1px solid #999;
+		}
+
+		.time {
+			color: #777;
+			font-size: 80%;
+		}
+	}
+
+	dd .description {
+		font-style: italic;
+    }
+    
+    dt.grouped {
+		margin-left: 5em;
+	}
+
+	dd.grouped {
+		margin-left: 9em;
+	}
+
+	dt.icon {
+		background-position: 0 0px !important;
+	}
+
+    dd {
+        margin-bottom: 1em;
+        padding-left: 18px;
+        font-size: 0.9em;
+
+        span.description {
+            display: block;
+            color: #808080;
+        }
+    }
+
+    span.project:after {
+        content: " -";
+    }
+}
+
+

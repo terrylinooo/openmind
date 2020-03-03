@@ -1,0 +1,54 @@
+
+/* Conent buttons */
+#content {
+
+	> .contextual {
+		&:first-child {
+			margin-top: 10px;
+		}
+	}
+
+	.contextual {
+
+		~ p > strong {
+			padding: 5px;
+
+			&:before {
+				font-family: 'Font Awesome 5 Free';
+				margin-right: 10px;
+				content: fa-content($fa-var-folder-open);
+				color: #ffffff;
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				vertical-align: baseline;
+				display: inline-block;
+				line-height: 25px;
+				text-align: center;
+				background-color: $header-background-color;
+			}
+		}
+
+		a.icon {
+			padding: 3px 6px;
+			border-radius: 3px;
+			box-shadow:inset 0px 1px 0px 0px #ffffff;
+			background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+			background-color: #f9f9f9;
+			border: 1px solid #dcdcdc;
+            text-decoration: none;
+            color: #666666;
+
+			&:hover {
+				background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+				background-color: #e9e9e9;
+			}
+
+			&:before {
+				margin-right: 5px;
+				overflow: hidden;
+				color: #333;
+			}
+		}
+	}
+}
