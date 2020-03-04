@@ -78,3 +78,16 @@
 		}
     }
 }
+
+#query_form_with_buttons {
+	a.icon {
+		padding: 5px 8px;
+		border-radius: 3px;
+		font-size: 14px;
+		vertical-align: middle;
+	}
+	.contextual {
+		margin: 9px !important;
+	}
+
+}

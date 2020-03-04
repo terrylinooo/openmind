@@ -681,8 +681,7 @@ input, select, button {
 	vertical-align: middle;
 	margin-top: 1px;
 	margin-bottom: 1px;
-	height: 24px;
-	padding: 0 7px;
+	padding: 7px;
 }
 
 input, select, textarea, button {
@@ -1646,7 +1645,7 @@ html > body .tabular p {
 
 		/* width of labels. Should be smaller than left column to create some right margin */
 		width: 175px;
-		line-height: 24px;
+		line-height: 33px;
 
 		&.floating {
 			font-weight: normal;
@@ -2045,80 +2044,6 @@ input.autocomplete {
 	-moz-column-rule: 1px solid #ccc;
 }
 
-/***** Flash & error messages ****/
-
-#errorExplanation, div.flash, .nodata, .warning, .conflict {
-	clear: both;
-	padding: 6px 4px 6px 30px;
-	margin-bottom: 12px;
-	font-size: 1.1em;
-	border: 1px solid;
-	border-radius: 3px;
-}
-
-div.flash {
-	margin-top: 8px;
-
-	&.error {
-		background: url(../../../images/exclamation.png) 8px 50% no-repeat;
-		background-color: #ffe3e3;
-		border-color: #d88;
-		color: #880000;
-	}
-}
-
-#errorExplanation {
-	background: url(../../../images/exclamation.png) 8px 50% no-repeat;
-	background-color: #ffe3e3;
-	border-color: #d88;
-	color: #880000;
-}
-
-div.flash {
-	&.notice {
-		background: url(../../../images/true.png) 8px 5px no-repeat;
-		background-color: #dfffdf;
-		border-color: #9fcf9f;
-		color: #005f00;
-	}
-
-	&.warning {
-		background: url(../../../images/warning.png) 8px 5px no-repeat;
-		background-color: #F3EDD1;
-		border-color: #eadbbc;
-		color: #A6750C;
-		text-align: left;
-	}
-}
-
-.conflict {
-	background: url(../../../images/warning.png) 8px 5px no-repeat;
-	background-color: #F3EDD1;
-	border-color: #eadbbc;
-	color: #A6750C;
-	text-align: left;
-}
-
-.nodata, .warning {
-	text-align: center;
-	background-color: #F3EDD1;
-	border-color: #eadbbc;
-	color: #A6750C;
-}
-
-#errorExplanation {
-	ul {
-		font-size: 0.9em;
-	}
-
-	h2, p {
-		display: none;
-	}
-}
-
-.conflict-details {
-	font-size: 80%;
-}
 
 /***** Ajax indicator ******/
 

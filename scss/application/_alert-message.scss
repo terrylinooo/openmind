@@ -1,0 +1,76 @@
+
+/***** Flash & error messages ****/
+
+#errorExplanation, div.flash, .nodata, .warning, .conflict {
+	clear: both;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+div.flash {
+	margin-top: 8px;
+
+	&.error {
+		background: url(../../../images/exclamation.png) 8px 50% no-repeat;
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+	}
+}
+
+#errorExplanation {
+	background: url(../../../images/exclamation.png) 8px 50% no-repeat;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+div.flash {
+	&.notice {
+		background: url(../../../images/true.png) 8px 5px no-repeat;
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+	}
+
+	&.warning {
+		background: url(../../../images/warning.png) 8px 5px no-repeat;
+        color: #856404;
+        background-color: #fff3cd;
+        border-color: #ffeeba;
+		text-align: left;
+	}
+}
+
+.conflict {
+	background: url(../../../images/warning.png) 8px 5px no-repeat;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+	text-align: left;
+}
+
+.nodata, .warning {
+	text-align: center;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+#errorExplanation {
+	ul {
+		font-size: 0.9em;
+	}
+
+	h2, p {
+		display: none;
+	}
+}
+
+.conflict-details {
+	font-size: 80%;
+}

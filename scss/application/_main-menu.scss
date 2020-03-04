@@ -91,5 +91,9 @@
 		right: 6px;
 		background-color: transparent;
 		border-bottom-color: transparent;
-	}
+    }
+    
+    &.tabs {
+        bottom: -3px !important;
+    }
 }

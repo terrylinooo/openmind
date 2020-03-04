@@ -102,8 +102,13 @@ table.list {
 
 .table-list-cell {
 	display: table-cell;
-	vertical-align: top;
-	padding: 2px;
+	padding: 8px;
+
+	&.name {
+		a {
+			margin-left: 10px;
+		}
+	}
 }
 
 .table-list div.buttons {
