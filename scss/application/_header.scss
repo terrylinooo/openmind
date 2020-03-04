@@ -1,0 +1,28 @@
+
+#header {
+	min-height: 55px;
+	margin: 0;
+    background-color: $header-background-color;
+
+    
+	color: #f8f8f8;
+	padding: 4px 8px 20px 6px;
+	position: relative;
+
+	a {
+		color: #f8f8f8;
+	}
+
+	h1 {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding: 5px 10px;
+
+		.breadcrumbs {
+			display: block;
+			font-size: .5em;
+			font-weight: normal;
+		}
+	}
+}

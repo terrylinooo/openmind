@@ -1,0 +1,38 @@
+
+#top-menu {
+	background: $top-menu-background-color;
+	color: #fff;
+	height: 30px;
+	font-size: 13px;
+	line-height: 30px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		float: left;
+		list-style-type: none;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		white-space: nowrap;
+	}
+
+	a {
+        color: #fff;
+        margin-left: 6px;
+		margin-right: 6px;
+	}
+
+	#loggedas {
+		float: right;
+		margin-right: 0.5em;
+        color: #fff;
+        
+        .active {
+            font-weight: bold;
+            color: $header-background-color;
+        }
+	}
+}

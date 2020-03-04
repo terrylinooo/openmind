@@ -1,0 +1,29 @@
+@media screen and (max-width: 899px) {
+
+	#header {
+		background-color: $header-background-color !important;
+	}
+
+	.flyout-menu {
+		background-color: $header-background-color !important;
+	}
+
+	.flyout-menu h3 {
+        height: 40px !important;
+        line-height: 40px !important;
+        color: #fff;
+		border-top: 1px solid darken($header-background-color, 10%) !important;
+		border-bottom: 1px solid darken($header-background-color, 10%) !important;
+		background-color: #333 !important;
+    }
+    
+    .flyout-menu__search {
+        background-color: darken($header-background-color, 20%) !important;
+    }
+
+    .js-flyout-menu-toggle-button {
+        background-color: darken($header-background-color, 30%) !important;
+        border: 0 !important;
+    }
+}
+

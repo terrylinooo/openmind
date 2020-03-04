@@ -13,12 +13,21 @@
             font-family: get-heading-font($lang-code);
         }
     
-        .section-intro, #post-title, .site-info {
+        #main-menu li a,
+        #content label {
             font-family: get-title-font($lang-code);
         }
 
         .icon {
-            font-family: get-title-font($lang-code), 'Font Awesome 5 Free';
+            font-family: get-base-font($lang-code), 'Font Awesome 5 Free';
+        }
+
+        #content {
+            .contextual {
+                ~ p > strong {
+                    font-family: get-title-font($lang-code);
+                }
+            }
         }
     }
 }

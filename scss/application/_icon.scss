@@ -4,7 +4,11 @@
     font-family: 'Font Awesome 5 Free';
     font-weight: 400;
 	background-position: 0% 50%;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	
+	&:before {
+		margin-right: 5px;
+	}
 }
 
 .icon-only {
@@ -24,26 +28,6 @@
 		content: "&nbsp;";
 	}
 }
-
-.buttons {
-    a.icon {
-        color: #666666 !important;
-        padding: 3px 5px;
-        border: 1px #dddddd solid;
-        text-decoration: none;
-        background-color: #ffffff;
-		border-radius: 3px;
-		color: #333;
-        
-        &:before {
-            margin-right: 5px !important;
-            overflow: hidden;
-            color: #000;
-        }
-    }
-}
-
-
 
 .icon-add {
     &:before {
@@ -211,8 +195,7 @@
 
 .icon-lock, .icon-locked {
     &:before {
-		font-weight: 900;
-        content: fa-content($fa-var-lock);
+        content: fa-content($fa-var-file-archive);
     }
 }
 

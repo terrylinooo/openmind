@@ -1,0 +1,70 @@
+
+/***** Links *****/
+
+a {
+	color: rgb(21, 140, 214);
+	text-decoration: none;
+
+	&:link, &:visited {
+		color: #169;
+		text-decoration: none;
+	}
+
+	&:hover, &:active {
+		color: #dd6300;
+		text-decoration: underline;
+	}
+
+	img {
+		border: 0;
+	}
+
+	&.issue.closed {
+		color: #999;
+		text-decoration: line-through;
+
+		&:link, &:visited {
+			color: #999;
+			text-decoration: line-through;
+		}
+	}
+
+	&.project.closed {
+		color: #999;
+
+		&:link, &:visited {
+			color: #999;
+		}
+	}
+
+	&.user.locked {
+		color: #999;
+
+		&:link, &:visited {
+			color: #999;
+		}
+	}
+}
+
+#sidebar a.selected {
+	line-height: 1.7em;
+	padding: 1px 3px 2px 2px;
+	margin-left: -2px;
+	background-color: #9DB9D5;
+	color: #fff;
+	border-radius: 2px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+a {
+	&.collapsible {
+		padding-left: 12px;
+	}
+
+	&#toggle-completed-versions {
+		color: #999;
+	}
+}
