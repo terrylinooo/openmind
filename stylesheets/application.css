@@ -5988,7 +5988,7 @@ body {
 
 h1, h2, h3, h4 {
   padding: 2px 10px 1px 0px;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 
 #content h1, h2, h3, h4 {
@@ -6081,6 +6081,7 @@ div#wrapper, div#wrapper2, div#wrapper3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: 5px 10px;
 }
 #header h1 .breadcrumbs {
   display: block;
@@ -6349,7 +6350,7 @@ html > body #content {
   font-weight: normal;
 }
 #login-form input#openid_url {
-  background: #fff url(../images/openid-bg.gif) no-repeat 4px 50%;
+  background: #fff url(../../../images/openid-bg.gif) no-repeat 4px 50%;
   padding-left: 24px !important;
 }
 
@@ -6651,7 +6652,7 @@ span.add_attachment {
 }
 span.add_attachment a {
   padding-left: 16px;
-  background: url(../images/bullet_add.png) no-repeat 0 50%;
+  background: url(../../../images/bullet_add.png) no-repeat 0 50%;
 }
 
 input:disabled, select:disabled, textarea:disabled {
@@ -6761,7 +6762,7 @@ select {
   -o-appearance: none;
   appearance: none;
   background-color: #fff;
-  background-image: url(../images/arrow_down.png);
+  background-image: url(../../../images/arrow_down.png);
   background-repeat: no-repeat;
   background-position: calc(100% - 7px) 50%;
   padding-right: 20px;
@@ -7680,10 +7681,10 @@ span.required {
   height: 1.8em;
 }
 .attachments_fields .ajax-waiting input.filename {
-  background: url(../images/hourglass.png) no-repeat 0px 50%;
+  background: url(../../../images/hourglass.png) no-repeat 0px 50%;
 }
 .attachments_fields .ajax-loading input.filename {
-  background: url(../images/loading.gif) no-repeat 0px 50%;
+  background: url(../../../images/loading.gif) no-repeat 0px 50%;
 }
 .attachments_fields div.ui-progressbar {
   width: 100px;
@@ -7743,7 +7744,7 @@ p.other-formats {
 }
 
 a.atom {
-  background: url(../images/feed.png) no-repeat 1px 50%;
+  background: url(../../../images/feed.png) no-repeat 1px 50%;
   padding: 2px 0px 3px 16px;
 }
 
@@ -7755,7 +7756,7 @@ em.info {
 }
 em.info.error {
   padding-left: 20px;
-  background: url(../images/exclamation.png) no-repeat 0 50%;
+  background: url(../../../images/exclamation.png) no-repeat 0 50%;
 }
 
 textarea.text_cf {
@@ -7811,11 +7812,11 @@ input#principal_search, input#user_search {
 }
 
 input.autocomplete {
-  background: #fff url(../images/magnifier.png) no-repeat 2px 50%;
+  background: #fff url(../../../images/magnifier.png) no-repeat 2px 50%;
   padding-left: 20px !important;
 }
 input.autocomplete.ajax-loading {
-  background-image: url(../images/loading.gif);
+  background-image: url(../../../images/loading.gif);
 }
 
 .role-visibility {
@@ -7869,27 +7870,27 @@ div.flash {
   margin-top: 8px;
 }
 div.flash.error {
-  background: url(../images/exclamation.png) 8px 50% no-repeat;
+  background: url(../../../images/exclamation.png) 8px 50% no-repeat;
   background-color: #ffe3e3;
   border-color: #d88;
   color: #880000;
 }
 
 #errorExplanation {
-  background: url(../images/exclamation.png) 8px 50% no-repeat;
+  background: url(../../../images/exclamation.png) 8px 50% no-repeat;
   background-color: #ffe3e3;
   border-color: #d88;
   color: #880000;
 }
 
 div.flash.notice {
-  background: url(../images/true.png) 8px 5px no-repeat;
+  background: url(../../../images/true.png) 8px 5px no-repeat;
   background-color: #dfffdf;
   border-color: #9fcf9f;
   color: #005f00;
 }
 div.flash.warning {
-  background: url(../images/warning.png) 8px 5px no-repeat;
+  background: url(../../../images/warning.png) 8px 5px no-repeat;
   background-color: #F3EDD1;
   border-color: #eadbbc;
   color: #A6750C;
@@ -7897,7 +7898,7 @@ div.flash.warning {
 }
 
 .conflict {
-  background: url(../images/warning.png) 8px 5px no-repeat;
+  background: url(../../../images/warning.png) 8px 5px no-repeat;
   background-color: #F3EDD1;
   border-color: #eadbbc;
   color: #A6750C;
@@ -7945,7 +7946,7 @@ html > body #ajax-indicator {
 #ajax-indicator span {
   background-position: 0% 40%;
   background-repeat: no-repeat;
-  background-image: url(../images/loading.gif);
+  background-image: url(../../../images/loading.gif);
   padding-left: 26px;
   vertical-align: bottom;
 }
@@ -8003,27 +8004,27 @@ table.cal td.nwday:not(.odd) {
   background-color: #f1f1f1;
 }
 table.cal .starting a.issue {
-  background: url(../images/bullet_go.png) no-repeat -1px -2px;
+  background: url(../../../images/bullet_go.png) no-repeat -1px -2px;
   padding-left: 16px;
 }
 
 p.cal.legend .starting {
-  background: url(../images/bullet_go.png) no-repeat -1px -2px;
+  background: url(../../../images/bullet_go.png) no-repeat -1px -2px;
   padding-left: 16px;
 }
 
 table.cal .ending a.issue, p.cal.legend .ending {
-  background: url(../images/bullet_end.png) no-repeat -1px -2px;
+  background: url(../../../images/bullet_end.png) no-repeat -1px -2px;
   padding-left: 16px;
 }
 
 table.cal .starting.ending a.issue {
-  background: url(../images/bullet_diamond.png) no-repeat -1px -2px;
+  background: url(../../../images/bullet_diamond.png) no-repeat -1px -2px;
   padding-left: 16px;
 }
 
 p.cal.legend .starting.ending {
-  background: url(../images/bullet_diamond.png) no-repeat -1px -2px;
+  background: url(../../../images/bullet_diamond.png) no-repeat -1px -2px;
   padding-left: 16px;
 }
 p.cal.legend span {
@@ -8102,12 +8103,12 @@ button.tab-left:focus, button.tab-right:focus {
 }
 button.tab-left {
   right: 20px;
-  background: #eeeeee url(../images/arrow_left.png) no-repeat 50% 50%;
+  background: #eeeeee url(../../../images/arrow_left.png) no-repeat 50% 50%;
   border-top-left-radius: 3px;
 }
 button.tab-right {
   right: 0;
-  background: #eeeeee url(../images/arrow_right.png) no-repeat 50% 50%;
+  background: #eeeeee url(../../../images/arrow_right.png) no-repeat 50% 50%;
   border-top-right-radius: 3px;
 }
 button.tab-left.disabled, button.tab-right.disabled {
@@ -8285,17 +8286,17 @@ td.gantt_selected_column .gantt_hdr {
 }
 
 .task_late {
-  background: #f66 url(../images/task_late.png);
+  background: #f66 url(../../../images/task_late.png);
   border: 1px solid #f66;
 }
 
 .task_done {
-  background: #00c600 url(../images/task_done.png);
+  background: #00c600 url(../../../images/task_done.png);
   border: 1px solid #00c600;
 }
 
 .task_todo {
-  background: #aaa url(../images/task_todo.png);
+  background: #aaa url(../../../images/task_todo.png);
   border: 1px solid #aaa;
 }
 .task_todo.parent {
@@ -8310,7 +8311,7 @@ td.gantt_selected_column .gantt_hdr {
 
 .task.parent.marker.starting {
   position: absolute;
-  background: url(../images/task_parent_end.png) no-repeat 0 0;
+  background: url(../../../images/task_parent_end.png) no-repeat 0 0;
   width: 8px;
   height: 16px;
   margin-left: -4px;
@@ -8319,7 +8320,7 @@ td.gantt_selected_column .gantt_hdr {
 }
 .task.parent.marker.ending {
   position: absolute;
-  background: url(../images/task_parent_end.png) no-repeat 0 0;
+  background: url(../../../images/task_parent_end.png) no-repeat 0 0;
   width: 8px;
   height: 16px;
   margin-left: -4px;
@@ -8328,25 +8329,25 @@ td.gantt_selected_column .gantt_hdr {
 }
 
 .version.task_late {
-  background: #f66 url(../images/milestone_late.png);
+  background: #f66 url(../../../images/milestone_late.png);
   border: 1px solid #f66;
   height: 2px;
   margin-top: 3px;
 }
 .version.task_done {
-  background: #00c600 url(../images/milestone_done.png);
+  background: #00c600 url(../../../images/milestone_done.png);
   border: 1px solid #00c600;
   height: 2px;
   margin-top: 3px;
 }
 .version.task_todo {
-  background: #fff url(../images/milestone_todo.png);
+  background: #fff url(../../../images/milestone_todo.png);
   border: 1px solid #fff;
   height: 2px;
   margin-top: 3px;
 }
 .version.marker {
-  background-image: url(../images/version_marker.png);
+  background-image: url(../../../images/version_marker.png);
   background-repeat: no-repeat;
   border: 0;
   margin-left: -4px;
@@ -8354,25 +8355,25 @@ td.gantt_selected_column .gantt_hdr {
 }
 
 .project.task_late {
-  background: #f66 url(../images/milestone_late.png);
+  background: #f66 url(../../../images/milestone_late.png);
   border: 1px solid #f66;
   height: 2px;
   margin-top: 3px;
 }
 .project.task_done {
-  background: #00c600 url(../images/milestone_done.png);
+  background: #00c600 url(../../../images/milestone_done.png);
   border: 1px solid #00c600;
   height: 2px;
   margin-top: 3px;
 }
 .project.task_todo {
-  background: #fff url(../images/milestone_todo.png);
+  background: #fff url(../../../images/milestone_todo.png);
   border: 1px solid #fff;
   height: 2px;
   margin-top: 3px;
 }
 .project.marker {
-  background-image: url(../images/project_marker.png);
+  background-image: url(../../../images/project_marker.png);
   background-repeat: no-repeat;
   border: 0;
   margin-left: -4px;
@@ -8440,7 +8441,7 @@ td.gantt_selected_column .gantt_hdr {
   cursor: move;
 }
 .sort-handle.ajax-loading {
-  background-image: url(../images/loading.gif);
+  background-image: url(../../../images/loading.gif);
 }
 
 tr.ui-sortable-helper {
@@ -8542,7 +8543,7 @@ h2 img {
 }
 
 img.filecontent.image {
-  background-image: url(../images/transparent.png);
+  background-image: url(../../../images/transparent.png);
 }
 
 /* Custom JQuery styles */
@@ -9354,46 +9355,46 @@ img {
 }
 
 .icon-file {
-  background-image: url(../../images/files/default.png);
+  background-image: url(../../../images/files/default.png);
 }
 .icon-file.text-plain {
-  background-image: url(../../images/files/text.png);
+  background-image: url(../../../images/files/text.png);
 }
 .icon-file.text-x-c {
-  background-image: url(../../images/files/c.png);
+  background-image: url(../../../images/files/c.png);
 }
 .icon-file.text-x-csharp {
-  background-image: url(../../images/files/csharp.png);
+  background-image: url(../../../images/files/csharp.png);
 }
 .icon-file.text-x-java {
-  background-image: url(../../images/files/java.png);
+  background-image: url(../../../images/files/java.png);
 }
 .icon-file.application-javascript {
-  background-image: url(../../images/files/js.png);
+  background-image: url(../../../images/files/js.png);
 }
 .icon-file.text-x-php {
-  background-image: url(../../images/files/php.png);
+  background-image: url(../../../images/files/php.png);
 }
 .icon-file.text-x-ruby {
-  background-image: url(../../images/files/ruby.png);
+  background-image: url(../../../images/files/ruby.png);
 }
 .icon-file.text-xml {
-  background-image: url(../../images/files/xml.png);
+  background-image: url(../../../images/files/xml.png);
 }
 .icon-file.text-css {
-  background-image: url(../../images/files/css.png);
+  background-image: url(../../../images/files/css.png);
 }
 .icon-file.text-html {
-  background-image: url(../../images/files/html.png);
+  background-image: url(../../../images/files/html.png);
 }
 .icon-file.image-gif, .icon-file.image-jpeg, .icon-file.image-png, .icon-file.image-tiff {
-  background-image: url(../../images/files/image.png);
+  background-image: url(../../../images/files/image.png);
 }
 .icon-file.application-pdf {
-  background-image: url(../../images/files/pdf.png);
+  background-image: url(../../../images/files/pdf.png);
 }
 .icon-file.application-zip, .icon-file.application-gzip {
-  background-image: url(../../images/files/zip.png);
+  background-image: url(../../../images/files/zip.png);
 }
 
 /***** Tables *****/
@@ -9540,7 +9541,7 @@ table.issues td.block_column pre {
 }
 
 tr.issue.idnt td.subject, tr.project.idnt td.name {
-  background: url(../images/arrow_right.png) no-repeat 2px 50%;
+  background: url(../../../images/arrow_right.png) no-repeat 2px 50%;
 }
 tr.issue.idnt-1 td.subject, tr.project.idnt-1 td.name {
   padding-left: 24px;
@@ -9856,7 +9857,7 @@ a.sort {
 }
 
 table.boards a.board {
-  background: url(../images/comment.png) no-repeat 0% 50%;
+  background: url(../../../images/comment.png) no-repeat 0% 50%;
   padding-left: 20px;
 }
 table.boards td.last-message {
@@ -9985,7 +9986,7 @@ div.wiki .external {
   background-position: 0% 60%;
   background-repeat: no-repeat;
   padding-left: 12px;
-  background-image: url(../images/external.png);
+  background-image: url(../../../images/external.png);
 }
 div.wiki a {
   word-wrap: break-word;
