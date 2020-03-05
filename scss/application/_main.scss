@@ -318,182 +318,6 @@ div.modal {
 	display: none;
 }
 
-/***** Dropdown *****/
-
-.drdn {
-	position: relative;
-}
-
-.drdn-trigger {
-	box-sizing: border-box;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	cursor: pointer;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-}
-
-.drdn-content {
-	display: none;
-	position: absolute;
-	right: 0px;
-	top: 35px;
-	min-width: 100px;
-	background-color: #fff;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	color: #555;
-	z-index: 99;
-}
-
-.drdn.expanded .drdn-content {
-	display: block;
-}
-
-.drdn-content {
-	.quick-search {
-		margin: 8px;
-	}
-
-	.autocomplete {
-		box-sizing: border-box;
-		width: 100% !important;
-		height: 28px;
-
-		&:focus {
-			border-color: #5ad;
-		}
-	}
-}
-
-.drdn-items {
-	max-height: 400px;
-	overflow: auto;
-}
-
-div + .drdn-items {
-	border-top: 1px solid #ccc;
-}
-
-.drdn-items {
-	> {
-		* {
-			display: block;
-			border: 1px solid #fff;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-			padding: 4px 8px;
-		}
-
-		a:hover {
-			text-decoration: none;
-		}
-
-		*:focus {
-			border: 1px dotted #bbb;
-		}
-	}
-
-	&.selection {
-		> * {
-			&:before {
-				content: ' ';
-				display: inline-block;
-				line-height: 1em;
-				width: 1em;
-				height: 1em;
-				margin-right: 4px;
-				font-weight: bold;
-			}
-
-			&.selected:before {
-				content: "\2713 ";
-			}
-		}
-
-		&:empty {
-			border: none;
-		}
-	}
-
-	> span {
-		color: #999;
-	}
-}
-
-.contextual {
-	.drdn-content {
-		top: 18px;
-	}
-
-	.drdn-items {
-		padding: 2px;
-		min-width: 160px;
-
-		> a {
-			padding: 5px 8px;
-
-			&.icon {
-				&:before {
-					margin-right: 5px;
-					overflow: hidden;
-				}
-			}
-
-			&:hover {
-				color: #2A5685;
-				border: 1px solid #628db6;
-				background-color: #eef5fd;
-				border-radius: 3px;
-			}
-		}
-	}
-}
-
-
-#project-jump {
-	&.drdn {
-		width: 200px;
-		display: inline-block;
-	}
-
-	.drdn-trigger {
-		width: 100%;
-		height: 30px;
-		display: inline-block;
-		padding: 3px 18px 3px 6px;
-		border-radius: 3px;
-		border: 1px solid darken($header-background-color, 5%);
-		margin: 0 !important;
-		vertical-align: middle;
-		color: #555;
-		background: #fff url(../../../images/arrow_down.png) no-repeat 97% 50%;
-	}
-
-	.drdn.expanded .drdn-trigger {
-		background-image: url(../../../images/arrow_up.png);
-	}
-
-	.drdn-content {
-		width: 280px;
-	}
-
-	.drdn-items > {
-		* {
-			color: #555 !important;
-		}
-
-		a:hover {
-			background-color: #759FCF;
-			color: #fff !important;
-		}
-	}
-}
-
-
 div.table-list.boards .table-list-cell.name {
 	width: 30%;
 }
@@ -615,7 +439,7 @@ input:disabled, select:disabled, textarea:disabled {
 	background-color: #f6f6f6;
 	color: #505050;
 	line-height: 1.5em;
-	border: 1px solid #e4e4e4;
+	border: 1px solid #dddddd;
 	word-wrap: break-word;
 	border-radius: 3px;
 }
@@ -735,8 +559,47 @@ input {
 	&[type="checkbox"] {
 		width: 18px;
 		height: 18px;
-		margin-top: -1px;
+		margin-top: 8px;
 		margin-bottom: 1px;
+		vertical-align: middle;
+	}
+}
+
+label {
+	&.inline, &.block {
+		input[type=checkbox] {
+			margin-top: 1px;
+		}
+	}
+}
+
+.field {
+	input[type=checkbox] {
+		margin-top: 1px;
+	}
+
+	label {
+		vertical-align: middle;
+		line-height: 20px;
+	}
+}
+
+.scm_name, .field {
+
+	label {
+		vertical-align: bottom;
+
+		input[type=checkbox] {
+			margin-top: 1px;
+		}
+	}
+
+}
+
+#sidebar {
+	input[type=checkbox] {
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 }
 
@@ -805,13 +668,7 @@ select[multiple=multiple] {
 	height: auto;
 }
 
-fieldset {
-	clear: both;
-	border: 1px solid #e4e4e4;
-	margin: 0;
-	min-width: inherit;
-	overflow: hidden;
-}
+
 
 legend {
 	color: #333;
@@ -1009,65 +866,7 @@ div {
 	}
 }
 
-fieldset {
 
-	margin-bottom: 10px;
-	padding: 10px;
-
-	&.collapsible {
-		border-width: 1px;
-
-		> legend {
-			cursor: pointer;
-			font-size: 15px;
-			background-color: #ffffff;
-			padding-left: 5px;
-			padding-right: 5px;
-			background-position: 4px;
-		}
-	}
-
-	&#date-range p {
-		margin: 2px 0 2px 0;
-	}
-
-	&#filters {
-		table {
-			border-collapse: collapse;
-
-			td {
-				padding: 0;
-				vertical-align: middle;
-			}
-		}
-
-		tr.filter {
-			height: 2.1em;
-		}
-
-		td {
-			&.field {
-				width: 230px;
-			}
-
-			&.operator {
-				width: 130px;
-
-				select {
-					max-width: 120px;
-				}
-			}
-
-			&.values {
-				white-space: nowrap;
-
-				select {
-					min-width: 130px;
-				}
-			}
-		}
-	}
-}
 
 #filters-table {
 	width: 60%;
@@ -1782,15 +1581,7 @@ input {
 	}
 }
 
-fieldset {
-	&.settings label {
-		display: block;
-	}
 
-	&#notified_events .parent {
-		padding-left: 20px;
-	}
-}
 
 span.required {
 	color: #bb0000;

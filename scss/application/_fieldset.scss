@@ -1,0 +1,81 @@
+fieldset {
+
+    clear: both;
+	border: 1px solid #e4e4e4;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+	min-width: inherit;
+	overflow: hidden;
+
+	a.icon {
+		height: 29px;
+		padding: 0 10px;
+		line-height: 29px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&.settings label {
+		display: block;
+	}
+
+	&#notified_events .parent {
+		padding-left: 20px;
+	}
+
+	&.collapsible {
+		border-width: 1px;
+
+		> legend {
+			cursor: pointer;
+			font-size: 15px;
+			background-color: #ffffff;
+			padding-left: 5px;
+			padding-right: 5px;
+			background-position: 4px;
+		}
+	}
+
+	&#date-range p {
+		margin: 2px 0 2px 0;
+	}
+
+	&#filters {
+		table {
+			border-collapse: collapse;
+
+			td {
+				padding: 0;
+				vertical-align: middle;
+			}
+		}
+
+		tr.filter {
+			height: 2.1em;
+		}
+
+		td {
+			&.field {
+				width: 230px;
+			}
+
+			&.operator {
+				width: 130px;
+
+				select {
+					max-width: 120px;
+				}
+			}
+
+			&.values {
+				white-space: nowrap;
+
+				select {
+					min-width: 130px;
+				}
+			}
+		}
+	}
+}
+

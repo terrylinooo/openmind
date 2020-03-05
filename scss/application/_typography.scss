@@ -11,10 +11,10 @@
     
         h1, h2, h3, h4, h5, h6 {
             font-family: get-heading-font($lang-code);
+            font-weight: 500 !important;
         }
-    
-        #main-menu li a,
-        #content label {
+
+        #main-menu li a {
             font-family: get-title-font($lang-code);
         }
 

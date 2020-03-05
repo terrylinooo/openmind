@@ -1,10 +1,12 @@
 
 #main-menu {
-	position: absolute;
-	bottom: 0px;
-	left: 6px;
-	margin-right: -500px;
+	position: relative;
+	bottom: 0;
 	width: 100%;
+	padding: 0 !important;
+	margin: 0  !important;
+	line-height: normal;
+	box-sizing: border-box;
 
 	ul {
 		margin: 0;
@@ -19,12 +21,16 @@
 		margin: 0px 2px 0px 0px;
 		padding: 0px 0px 0px 0px;
 		white-space: nowrap;
-		display: inline-block;
+		float: left;
+		overflow: hidden;
 
 		a {
 			display: block;
+			overflow: hidden;
             color: #fff;
-            font-weight: 400;
+			font-weight: 400;
+			font-size: 14px !important;
+			line-height: normal !important;
 			text-decoration: none;
 			margin: 0;
 			padding: 4px 10px 4px 10px;
@@ -35,13 +41,7 @@
 				background: $tab-active-background-color;
 				color: #fff;
 			}
-		}
 
-		&:hover ul.menu-children, ul.menu-children.visible {
-			display: block;
-		}
-
-		a {
 			&.selected {
 				background: #fff;
 				color: #555;
@@ -56,6 +56,12 @@
 				background-color: $tab-active-background-color;
 			}
 		}
+
+		&:hover ul.menu-children, ul.menu-children.visible {
+			display: block;
+		}
+
+
 	}
 
 	.menu-children {
