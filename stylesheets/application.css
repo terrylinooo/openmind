@@ -26,6 +26,10 @@ $issue-border-color: darken($issue-background-color, 15%);
 :lang(en) #main-menu li a {
   font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
 }
+:lang(en) #admin-menu li a {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif, "Font Awesome 5 Free";
+  font-weight: 500 !important;
+}
 :lang(en) .icon {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif, "Font Awesome 5 Free";
 }
@@ -42,6 +46,10 @@ $issue-border-color: darken($issue-background-color, 15%);
 }
 :lang(zh) #main-menu li a {
   font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB";
+}
+:lang(zh) #admin-menu li a {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "標楷體", "DFKai-SB", "Font Awesome 5 Free";
+  font-weight: 500 !important;
 }
 :lang(zh) .icon {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "微軟正黑體", "Microsoft JhengHei", "SimHei", "Microsoft YaHei", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "標楷體", "DFKai-SB", "Font Awesome 5 Free";
@@ -60,6 +68,10 @@ $issue-border-color: darken($issue-background-color, 15%);
 :lang(ja) #main-menu li a {
   font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
 }
+:lang(ja) #admin-menu li a {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", "Font Awesome 5 Free";
+  font-weight: 500 !important;
+}
 :lang(ja) .icon {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", "Font Awesome 5 Free";
 }
@@ -76,6 +88,10 @@ $issue-border-color: darken($issue-background-color, 15%);
 }
 :lang(ko) #main-menu li a {
   font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim";
+}
+:lang(ko) #admin-menu li a {
+  font-family: "Roboto", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim", "Font Awesome 5 Free";
+  font-weight: 500 !important;
 }
 :lang(ko) .icon {
   font-family: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Dotum", "Gulim", "Font Awesome 5 Free";
@@ -6682,10 +6698,10 @@ label.inline input[type=checkbox], label.block input[type=checkbox] {
   margin-top: 1px;
 }
 
-.field input[type=checkbox] {
+.field input[type=checkbox], fieldset input[type=checkbox] {
   margin-top: 1px;
 }
-.field label {
+.field label, fieldset label {
   vertical-align: middle;
   line-height: 20px;
 }
@@ -7163,6 +7179,11 @@ ul.projects li.root, ul.projects li.child {
 }
 ul.projects div.description li {
   list-style-type: initial;
+}
+ul.projects div.root {
+  display: block;
+  min-height: 120px;
+  max-width: calc(100% - 10px);
 }
 
 #projects-index {

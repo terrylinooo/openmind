@@ -18,6 +18,11 @@
             font-family: get-title-font($lang-code);
         }
 
+        #admin-menu li a {
+            font-family: get-heading-font($lang-code), 'Font Awesome 5 Free';
+            font-weight: 500 !important;
+        }
+
         .icon {
             font-family: get-base-font($lang-code), 'Font Awesome 5 Free';
         }

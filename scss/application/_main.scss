@@ -573,7 +573,7 @@ label {
 	}
 }
 
-.field {
+.field, fieldset {
 	input[type=checkbox] {
 		margin-top: 1px;
 	}
@@ -1182,6 +1182,12 @@ ul.projects {
 
 	div.description li {
 		list-style-type: initial;
+	}
+
+	div.root {
+		display: block;
+		min-height: 120px;
+		max-width: calc(100% - 10px);
 	}
 }
 
