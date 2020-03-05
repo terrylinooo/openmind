@@ -6724,7 +6724,7 @@ div.square {
   padding-bottom: 3px;
 }
 .contextual input, .contextual select {
-  font-size: 0.9em;
+  font-size: 13px;
 }
 
 .message .contextual {
@@ -6761,7 +6761,9 @@ input, select, button {
   vertical-align: middle;
   margin-top: 1px;
   margin-bottom: 1px;
-  padding: 7px;
+  padding: 0 7px;
+  height: 29px;
+  line-height: 29px;
 }
 
 input, select, textarea, button {
@@ -6795,11 +6797,22 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
   background-color: #fff;
-  height: 28px;
   -webkit-transition: background-color 100ms linear;
   -moz-transition: background-color 100ms linear;
   -o-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-top: -1px;
+  margin-bottom: 1px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: -1px;
+  margin-bottom: 1px;
 }
 
 button[type="submit"] {
@@ -7023,6 +7036,7 @@ div.issue.overdue .due-date .value {
 
 fieldset {
   margin-bottom: 10px;
+  padding: 10px;
 }
 fieldset.collapsible {
   border-width: 1px;
@@ -10098,7 +10112,16 @@ div.wiki img {
   background-color: #4bbaf1;
 }
 #content .contextual a.icon {
-  padding: 5px 8px;
+  vertical-align: middle;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 0 7px;
+  font-size: 14px;
+  height: 29px;
+  line-height: 27px;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
   border-radius: 3px;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
@@ -10106,7 +10129,6 @@ div.wiki img {
   border: 1px solid #dcdcdc;
   text-decoration: none;
   color: #666666;
-  font-size: 14px;
 }
 #content .contextual a.icon:hover {
   background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
@@ -10119,7 +10141,16 @@ div.wiki img {
 }
 
 .buttons a.icon {
-  padding: 3px 6px;
+  vertical-align: middle;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 0 7px;
+  font-size: 14px;
+  height: 29px;
+  line-height: 27px;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
   border-radius: 3px;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
@@ -10139,10 +10170,16 @@ div.wiki img {
 }
 
 #query_form_with_buttons a.icon {
-  padding: 5px 8px;
-  border-radius: 3px;
-  font-size: 14px;
   vertical-align: middle;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 0 7px;
+  font-size: 14px;
+  height: 29px;
+  line-height: 27px;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
 }
 #query_form_with_buttons .contextual {
   margin: 9px !important;
@@ -10455,27 +10492,27 @@ div.flash {
   margin-top: 8px;
 }
 div.flash.error {
-  background: url(../../../images/exclamation.png) 8px 50% no-repeat;
+  background: none;
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
 }
 
 #errorExplanation {
-  background: url(../../../images/exclamation.png) 8px 50% no-repeat;
+  background: none;
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
 }
 
 div.flash.notice {
-  background: url(../../../images/true.png) 8px 5px no-repeat;
+  background: none;
   color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
 }
 div.flash.warning {
-  background: url(../../../images/warning.png) 8px 5px no-repeat;
+  background: none;
   color: #856404;
   background-color: #fff3cd;
   border-color: #ffeeba;
@@ -10483,7 +10520,7 @@ div.flash.warning {
 }
 
 .conflict {
-  background: url(../../../images/warning.png) 8px 5px no-repeat;
+  background: none;
   color: #856404;
   background-color: #fff3cd;
   border-color: #ffeeba;

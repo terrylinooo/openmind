@@ -15,7 +15,7 @@ div.flash {
 	margin-top: 8px;
 
 	&.error {
-		background: url(../../../images/exclamation.png) 8px 50% no-repeat;
+		background: none;
         color: #721c24;
         background-color: #f8d7da;
         border-color: #f5c6cb;
@@ -23,7 +23,7 @@ div.flash {
 }
 
 #errorExplanation {
-	background: url(../../../images/exclamation.png) 8px 50% no-repeat;
+	background: none;
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
@@ -31,14 +31,14 @@ div.flash {
 
 div.flash {
 	&.notice {
-		background: url(../../../images/true.png) 8px 5px no-repeat;
+		background: none;
         color: #155724;
         background-color: #d4edda;
         border-color: #c3e6cb;
 	}
 
 	&.warning {
-		background: url(../../../images/warning.png) 8px 5px no-repeat;
+		background: none;
         color: #856404;
         background-color: #fff3cd;
         border-color: #ffeeba;
@@ -47,7 +47,7 @@ div.flash {
 }
 
 .conflict {
-	background: url(../../../images/warning.png) 8px 5px no-repeat;
+	background: none;
     color: #856404;
     background-color: #fff3cd;
     border-color: #ffeeba;
