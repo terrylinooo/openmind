@@ -1395,6 +1395,7 @@ ul.projects {
 	-moz-column-count: auto;
 	-moz-column-width: 400px;
 	-moz-column-gap: 0.5rem;
+	column-gap: 0.5rem;
 	margin-bottom: 1.2em;
 
 	li.root ul.projects {
@@ -2042,7 +2043,9 @@ input.autocomplete {
 		-moz-column-count: auto;
 		-moz-column-width: 200px;
 		-moz-column-gap: 0.5rem;
+		column-gap: 0.5rem;
 		-moz-column-rule: 1px solid #ccc;
+		column-rule: 1px solid #ccc;
 	}
 }
 
@@ -2056,7 +2059,9 @@ input.autocomplete {
 	-moz-column-count: auto;
 	-moz-column-width: 200px;
 	-moz-column-gap: 0.5rem;
+	column-gap: 0.5rem;
 	-moz-column-rule: 1px solid #ccc;
+	column-rule: 1px solid #ccc;
 }
 
 

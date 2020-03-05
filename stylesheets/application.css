@@ -7106,7 +7106,6 @@ fieldset#filters td.values select {
   margin-top: 1em;
 }
 .buttons .icon {
-  paddin-bottom: 3px;
   padding-top: 1px;
 }
 
@@ -7340,6 +7339,7 @@ ul.projects div.description li {
   -moz-column-count: auto;
   -moz-column-width: 400px;
   -moz-column-gap: 0.5rem;
+  column-gap: 0.5rem;
   margin-bottom: 1.2em;
 }
 #projects-index li.root ul.projects {
@@ -7879,7 +7879,9 @@ input.autocomplete.ajax-loading {
   -moz-column-count: auto;
   -moz-column-width: 200px;
   -moz-column-gap: 0.5rem;
+  column-gap: 0.5rem;
   -moz-column-rule: 1px solid #ccc;
+  column-rule: 1px solid #ccc;
 }
 
 #user_group_ids {
@@ -7892,7 +7894,9 @@ input.autocomplete.ajax-loading {
   -moz-column-count: auto;
   -moz-column-width: 200px;
   -moz-column-gap: 0.5rem;
+  column-gap: 0.5rem;
   -moz-column-rule: 1px solid #ccc;
+  column-rule: 1px solid #ccc;
 }
 
 /***** Ajax indicator ******/
@@ -10416,9 +10420,6 @@ div.wiki img {
   right: 6px;
   background-color: transparent;
   border-bottom-color: transparent;
-}
-#main-menu.tabs {
-  bottom: -3px !important;
 }
 
 /***** Links *****/
