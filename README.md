@@ -11,9 +11,25 @@ Openmind is a readability and Markdown-friendly theme for Redmine project manage
 
 ## Screenshots
 
+Administrator
 
+![Administrator](https://github.com/terrylinooo/openmind/blob/master/screenshots/screenshot-administrator.png)
 
+Issue page
 
+![Issue page](https://github.com/terrylinooo/openmind/blob/master/screenshots/screenshot-issue.png)
+
+Overview
+
+![Overview](https://github.com/terrylinooo/openmind/blob/master/screenshots/screenshot-overview.png)
+
+Project list
+
+![Project list](https://github.com/terrylinooo/openmind/blob/master/screenshots/screenshot-project-list.png)
+
+Wiki page
+
+![Wiki page](https://github.com/terrylinooo/openmind/blob/master/screenshots/screenshot-wiki-page.png)
 
 ## Contributing
 
@@ -25,10 +41,15 @@ Openmind is a readability and Markdown-friendly theme for Redmine project manage
 
 ## Author
 
-[Terry L.](https://github.com/terrylinooo) [https://terryl.in](https://terryl.in)
+[Terry L.](https://github.com/terrylinooo) 
+
+- Blog: [https://terryl.in](https://terryl.in)
 
 ## License
 
-MIT
+- MIT
+- Fontawesome Fonts — SIL OFL 1.1 License
+
+See `License` file to read detail.
 
 
