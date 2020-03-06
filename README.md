@@ -1,5 +1,7 @@
 # Openmind - Redmine Theme
 
+![Administrator](https://github.com/terrylinooo/openmind/blob/master/screenshots/cover.png)
+
 Openmind is a readability and Markdown-friendly theme for Redmine project management software. 
 
 ## Installation
