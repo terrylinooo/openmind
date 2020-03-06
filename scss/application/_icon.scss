@@ -133,6 +133,7 @@
 
 .icon-attachment {
     &:before {
+		font-weight: 900;
         content: fa-content($fa-var-paperclip);
     }
 }

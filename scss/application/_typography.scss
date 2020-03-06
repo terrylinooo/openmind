@@ -27,10 +27,13 @@
             font-family: get-base-font($lang-code), 'Font Awesome 5 Free';
         }
 
-        #content {
-            .contextual {
-                ~ p > strong {
-                    font-family: get-title-font($lang-code);
+        .issue {
+            div:not(.wiki) {
+                .contextual {
+                    ~ p > strong {
+                        font-weight: 500 !important;
+                        font-family: get-title-font($lang-code);
+                    } 
                 }
             }
         }

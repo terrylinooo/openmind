@@ -8,27 +8,33 @@
 		}
 	}
 
-	.contextual {
-
-		~ p > strong {
-			padding: 5px;
-			font-weight: 500;
-
-			&:before {
-				font-family: 'Font Awesome 5 Free';
-				margin-right: 10px;
-				content: fa-content($fa-var-folder-open);
-				color: #ffffff;
-				width: 25px;
-				height: 25px;
-				border-radius: 50%;
-				vertical-align: baseline;
-				display: inline-block;
-				line-height: 25px;
-				text-align: center;
-				background-color: $header-background-color;
+	.issue {
+		div:not(.wiki) {
+			.contextual {
+				~ p > strong {
+					padding: 5px;
+					font-weight: 500;
+		
+					&:before {
+						font-family: 'Font Awesome 5 Free';
+						margin-right: 10px;
+						content: fa-content($fa-var-folder-open);
+						color: #ffffff;
+						width: 25px;
+						height: 25px;
+						border-radius: 50%;
+						vertical-align: baseline;
+						display: inline-block;
+						line-height: 25px;
+						text-align: center;
+						background-color: $header-background-color;
+					}
+				}
 			}
 		}
+	}
+	
+	.contextual {
 
 		a.icon {
 			vertical-align: middle;

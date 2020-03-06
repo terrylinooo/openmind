@@ -4,9 +4,15 @@
     $(function() {
         /**
          * This theme is created by Terry Lin.
-         * Please keep the credit link is best support for me.
+         * Keeping the credit link is the best support for me.
          */
-        var authorInfo = ', <a href="https://github.com/terrylinooo/openmind" target="_blank">Openmind</a> theme by <a href="https://terryl.in">Terry L.</a>';
+        var authorInfo = '';
+
+        authorInfo += ' | ';
+        authorInfo += '<a href="https://github.com/terrylinooo/openmind" target="_blank">Openmind</a>';
+        authorInfo += ' theme by ';
+        authorInfo += '<a href="https://terryl.in">Terry L.</a>';
+
         $('#footer').append(authorInfo);
     });
 
