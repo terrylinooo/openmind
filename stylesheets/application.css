@@ -8752,18 +8752,16 @@ img {
 .icon-only {
   background-position: 0% 50%;
   background-repeat: no-repeat;
-  padding-left: 16px;
   display: inline-block;
-  width: 0;
-  height: 16px;
+  width: 20px;
   overflow: hidden;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-size: 8px;
-  vertical-align: middle;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
 }
-.icon-only::after {
-  content: "&nbsp;";
+.icon-only:before {
+  margin-right: 25px;
 }
 
 .icon-add:before {
